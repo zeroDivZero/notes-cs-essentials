@@ -36,9 +36,9 @@ Windows text files use "\r\n" to terminate lines, UNIX text files use "\n".
 
 ## Dot (`.`) Matches (Almost) Any Character
 
-Dot (`.`) matches character, except line break characters. Short for `[^\n]` (UNIX) or `[^\r\n]` (Windows). Most apps have "dot matches all" or "single line" mode that makes dot match any character, including line breaks.
+Dot (`.`) matches character, except line breaks. Short for `[^\n]` (UNIX) or `[^\r\n]` (Windows). Most apps have "dot matches all" or "single line" mode that makes dot match any character, including line breaks.
 
-`gr.y` matches "gray", "grey", "gr%y", etc. Use dot sparingly. Often character class or negated character class is faster and more precise.
+`gr.y` matches "gray", "grey", "gr%y", etc. Use dot sparingly. Often character class or negated character class faster and more precise.
 
 ## Anchor
 
@@ -86,7 +86,7 @@ If many groups, easier to name them. `(?<mygroup>[abc])=\k<mygroup>` is identica
 
 ## Unicode Properties
 
-`\p{L}` matches single character in given Unicode category. L stands for letter. `\P{L}` matches single character not in given Unicode category.
+`\p{L}` matches single character in given Unicode category. _L_ stands for letter. `\P{L}` matches single character not in given Unicode category.
 
 ## Lookaround
 
